@@ -1,42 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>游淳喻個人網站</title>
+<title>21游淳喻個人網站</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 300px; /* only for demonstration, should be removed */
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #f1f1f1;
+  height: 480px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
 </head>
-<body align="center">
-    <h1 style="color: rgb(152, 88, 194);">游淳喻傳送門</h1>
-    <hr><br>
-    <p style="color: rgb(0, 204, 255);">探索我的學習與創作旅程，分享校園生活與成長點滴</p>
-    <p style="color: rgb(230, 107, 138);">生日及星座：1/9 摩羯座</p>
-    <p style="color: rgb(192, 89, 166);">畢業學校：南投國中</p>
-    <p style="color: rgb(255, 193, 123);">個人特色亮點：外向 樂觀</p>
-    <p style="color: rgb(192, 89, 166);">期待：可以學到更多東西 順利畢業</p>
-    <p>大家好，我是游淳喻，作為一個外向且樂觀的人，<span style="color:rgb(0, 255, 170);">我總是帶著積極的態度面對生活中的挑戰，</span></p>無論是在學習還是創作上，我都渴望不斷探索新事物，提升自我。在學校裡，我積極參與各種活動，與同學們共同成長，也珍惜每一個學習的機會。</p>我的目標是能在順利畢業的同時，掌握更多的知識與技能，為未來的生活和事業奠定堅實的基礎。</p> <span style="color:rgb(0, 174, 255);">期待這段旅程中，我能不斷成長，與身邊的人一起分享我的學習心得和創作成果，讓每一個經歷都成為美好的回憶。</span></p>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3647.454884983383!2d120.67827887590052!3d23.908941182670322!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34693115b0afb3b1%3A0x12636c234990a8fb!2z5Y2X5oqV6auY5Lit6Zu75a2Q5ZWG5YuZ56eR!5e0!3m2!1szh-TW!2stw!4v1760948337615!5m2!1szh-TW!2stw" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    <iframe src="https://www.facebook.com/plugins/page.php?href=https://www.facebook.com/ntsh2231175&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
-  width="340"
-  height="500"
-  style="border:none;overflow:hidden"
-  scrolling="no"
-  frameborder="0"
-  allowfullscreen="true"
-  allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
-</iframe>
-<iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Ffacebook%2Fvideos%2F1279088283955481&width=500&show_text=true&height=280&appId"
-  width="500"
-  height="450"
-  scrolling="no"
-  frameborder="0"
-  allowfullscreen="true"
-  allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
-  allowFullScreen="true">
-</iframe>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/SetXcyfRQf0?si=gtAnO38UQf80cxY1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    <P><a href="https://www.ntsh.ntct.edu.tw">南投高中</a></P>
-    <img style="width: 60%;" src="1.png" alt="這是AI圖片">
-    <a href="test.html">游淳喻傳送門</a>
-    <button onclick="alert('ok');">我是按鈕</button>
+<body>
+
+<h2 style="color: rgb(0, 162, 255);">《學習與創作的足跡：我的校園成長故事》</h2>
+<p>探索我的學習與創作旅程，分享校園生活與成長點滴</p>
+<p>我的學習與創作旅程充滿了探索與成長的動力。大學校園是我成長的沃土，這裡不僅豐富了我的知識，還激發了我對創作的熱情。每一次的學術討論與實踐經歷，都讓我對未來充滿了信心與期待。從課堂到社團活動，我學會了如何在多元的環境中發現自己的熱愛與潛力。每一步的成長，都是我在學術與創意道路上邁出的堅實步伐。</p>
+
+<header>
+  <h2>游淳喻傳送門</h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="#">AI生圖</a></li>
+      <li><a href="#">Paris</a></li>
+      <li><a href="#">Tokyo</a></li>
+    </ul>
+  </nav>
+  
+  <article>
+    <h1>London</h1>
+    <img src="1.png"width=300>
+    <p>這張照片展示了一位年輕女孩身穿藍色和服，背後是簡約的背景。她的表情自然，眼神自信，透過細緻的服飾與護目鏡，展現出一種獨特的融合傳統與現代的風格。</p>
+  </article>
+</section>
+
+<footer>
+  <p>©版權所有.游淳喻.轉載請註明出處!</p>
+</footer>
+
 </body>
 </html>
